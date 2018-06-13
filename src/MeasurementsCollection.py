@@ -19,20 +19,20 @@ class MeasurementsCollection(object):
         self.authToken = authToken
         self.request = Request()
 
-    def loadFromSingleMonitor(self, measurements, monitorUrl, authToken):
+    def loadFromSingleMonitor(self, measurements, monitorUrl, rawMeasurements):
         """
         Loads last measurements from single monitor
 
         :param measurements: all measurements given until now
         :param monitorUrl: url of the monitor
-        :param authToken: authorization token
+        :param rawMeasurements: raw measurements from monitor
         :type measurements: dict
         :type monitorUrl: str
-        :type authToken: str
+        :type rawMeasurements: dict
         :return: returns all measurements including given from this one monitor
         :rtype: dict
         """
-        for measurement in self.request.getMeasurements(monitorUrl, authToken):
+        for measurement in rawMeasurements:
             metricId = measurement['metric_id']
             if metricId not in measurements:
                 measurements[metricId] = []
@@ -54,6 +54,6 @@ class MeasurementsCollection(object):
             measurements = self.loadFromSingleMonitor(
                 measurements,
                 monitorUrl,
-                self.authToken
+                self.request.getMeasurements(monitorUrl, self.authToken)
             )
         return measurements
