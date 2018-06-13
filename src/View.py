@@ -28,6 +28,7 @@ class View(object):
         for (metricId, measurement) in rawMeasurements.items():
             measurement.sort(key=lambda m: m[-1])
             measurement.reverse()
+            measurement = measurement[:self.limit]
             outputMeasurements[metricId] = measurement
         return outputMeasurements
 
@@ -45,7 +46,7 @@ class View(object):
         print()
         for (metricId, measurement) in self.prepare(measurements).items():
             print(tabulate.tabulate(
-                measurement[:self.limit],
+                measurement,
                 headers=['Monitor', 'Host', metricId]
             ))
             print()
