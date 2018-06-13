@@ -1,0 +1,4 @@
+{
+    "auth": "tbajorek.pl:5000",
+    "monitors": ["tbajorek.pl:4000"]
+}
