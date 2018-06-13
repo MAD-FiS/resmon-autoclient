@@ -52,8 +52,8 @@ class Client(object):
 
         :return: returns login response parsed as JSON
         """
-        print("Please type your username and password \
-        to be logged on authorization server")
+        print("Please type your username and password "
+              "to be logged on authorization server")
         self.loadUserData()
         return self.request.login(
             self.config.get('auth'),
@@ -67,13 +67,13 @@ class Client(object):
 
         :return: returns registration response parsed as JSON
         """
-        print("Please type new username and password \
-        to be registered on authorization server")
+        print("Please type new username and password "
+              "to be registered on authorization server")
         self.loadUserData()
         password2 = getpass.getpass('retype password: ')
         if self.userData['password'] != password2:
-            print("Error: You didn't enter the same passwords. \
-            Please try it again.")
+            print("Error: You didn't enter the same passwords. "
+                  "Please try it again.")
             exit(0)
         return self.request.register(
             self.config.get('auth'),

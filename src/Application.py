@@ -25,7 +25,7 @@ class Application(object):
 
         :return: returns data of all parsed parameters
         """
-        parser = argparse.ArgumentParser()
+        parser = argparse.ArgumentParser(prog='resmon-client')
         parser.add_argument(
             '-c',
             '--config',
