@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "851b0e34_2a08579f",
+        "filename": "README.md",
+        "patchSetId": 4
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please remove",
+      "range": {
+        "startLine": 25,
+        "startChar": 73,
+        "endLine": 25,
+        "endChar": 74
+      },
+      "revId": "826f9b4d8478d7e727422668dbb35cd5d1f315b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "923a373f_68d45199",
+        "filename": "resmon-client",
+        "patchSetId": 4
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please change into #!/bin/bash",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 19
+      },
+      "revId": "826f9b4d8478d7e727422668dbb35cd5d1f315b4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}

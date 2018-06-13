@@ -1,0 +1,211 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "90a62982_5ac72d29",
+        "filename": "README.md",
+        "patchSetId": 5
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please remove space",
+      "range": {
+        "startLine": 25,
+        "startChar": 73,
+        "endLine": 25,
+        "endChar": 74
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52e32f6c_cc78ea44",
+        "filename": "resmon-client",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "#!/bin/bash",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 19
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ec7f4781_1518f4df",
+        "filename": "scripts/build.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please change into \u0027.template\u0027",
+      "range": {
+        "startLine": 10,
+        "startChar": 21,
+        "endLine": 10,
+        "endChar": 27
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "25e0136a_52febceb",
+        "filename": "scripts/build.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please break line",
+      "range": {
+        "startLine": 14,
+        "startChar": 96,
+        "endLine": 14,
+        "endChar": 98
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "300a92dd_c7d62d6a",
+        "filename": "scripts/docgen.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please break line",
+      "range": {
+        "startLine": 11,
+        "startChar": 89,
+        "endLine": 11,
+        "endChar": 90
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7c984646_bc81a179",
+        "filename": "scripts/install.sh.in",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please remove into spaces",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 5,
+        "endChar": 1
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a626328a_dea7e26a",
+        "filename": "scripts/install.sh.in",
+        "patchSetId": 5
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please remove into spaces",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 1
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d8c9c743_d8b9a317",
+        "filename": "scripts/install.sh.in",
+        "patchSetId": 5
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please remove into spaces",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 1
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "bda509b0_a3743bcf",
+        "filename": "scripts/install.sh.in",
+        "patchSetId": 5
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1013695
+      },
+      "writtenOn": "2018-06-13T20:43:11Z",
+      "side": 1,
+      "message": "please remove into spaces",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 1
+      },
+      "revId": "a56ce5bf9fd34ae342388a21e5a25975ece31805",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
