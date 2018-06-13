@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+source ./resmon-autoclient.env
+/usr/bin/env python3 ./src/run.py $@
