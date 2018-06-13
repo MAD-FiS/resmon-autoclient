@@ -2,7 +2,7 @@
 
 # Run tests
 if [ -z ${RESMONAUTHENV+x} ]; then
-    source ./resmon-auth.env
+    source ./resmon-autoclient.env
 fi
 
 python3 test/*.py
