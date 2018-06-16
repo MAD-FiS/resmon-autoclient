@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module src.MeasurementsCollection</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong><a href="src.html"><font color="#ffffff">src</font></a>.MeasurementsCollection</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/var/lib/jenkins/workspace/resmon_autoclient_doc/src/MeasurementsCollection.py">/var/lib/jenkins/workspace/resmon_autoclient_doc/src/MeasurementsCollection.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="src.MeasurementsCollection.html#MeasurementsCollection">MeasurementsCollection</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="MeasurementsCollection">class <strong>MeasurementsCollection</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Represents&nbsp;single&nbsp;collection&nbsp;of&nbsp;data&nbsp;grabbed&nbsp;from&nbsp;all&nbsp;monitors&nbsp;in&nbsp;one&nbsp;time<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="MeasurementsCollection-__init__"><strong>__init__</strong></a>(self, monitors, authToken)</dt><dd><tt>Initializes&nbsp;a&nbsp;collection<br>
+&nbsp;<br>
+:param&nbsp;monitors:&nbsp;list&nbsp;of&nbsp;known&nbsp;monitor&nbsp;url&nbsp;addresses<br>
+:param&nbsp;authToken:&nbsp;authorization&nbsp;token<br>
+:type&nbsp;monitors:&nbsp;list<br>
+:type&nbsp;authToken:&nbsp;str</tt></dd></dl>
+
+<dl><dt><a name="MeasurementsCollection-get"><strong>get</strong></a>(self)</dt><dd><tt>Loads&nbsp;last&nbsp;measurements&nbsp;from&nbsp;all&nbsp;known&nbsp;monitors<br>
+:return:&nbsp;returns<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<dl><dt><a name="MeasurementsCollection-loadFromSingleMonitor"><strong>loadFromSingleMonitor</strong></a>(self, measurements, monitorUrl, rawMeasurements)</dt><dd><tt>Loads&nbsp;last&nbsp;measurements&nbsp;from&nbsp;single&nbsp;monitor<br>
+&nbsp;<br>
+:param&nbsp;measurements:&nbsp;all&nbsp;measurements&nbsp;given&nbsp;until&nbsp;now<br>
+:param&nbsp;monitorUrl:&nbsp;url&nbsp;of&nbsp;the&nbsp;monitor<br>
+:param&nbsp;rawMeasurements:&nbsp;raw&nbsp;measurements&nbsp;from&nbsp;monitor<br>
+:type&nbsp;measurements:&nbsp;dict<br>
+:type&nbsp;monitorUrl:&nbsp;str<br>
+:type&nbsp;rawMeasurements:&nbsp;dict<br>
+:return:&nbsp;returns&nbsp;all&nbsp;measurements&nbsp;including&nbsp;given&nbsp;from&nbsp;this&nbsp;one&nbsp;monitor<br>
+:rtype:&nbsp;dict</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+</td></tr></table></td></tr></table>
+</body></html>
