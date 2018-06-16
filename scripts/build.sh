@@ -7,7 +7,7 @@ echo ""
 rm -f `find -name '*.pyc'`
 rm -rf `find -name  '__pycache__'`
 
-cat ./scripts/install.sh.in > install.sh
+cat ./scripts/install.template > install.sh
 echo "ARCHIVE_DATA:" >> install.sh
 echo "- Install file is created"
 
