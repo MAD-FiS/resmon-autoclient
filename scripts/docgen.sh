@@ -2,7 +2,7 @@
 
 # Generates python documentation. Move html files to docs dictionary
 if [ -z ${RESMONAUTHENV+x} ]; then
-    source ./resmon-autoclient.env
+    source ./data/resmon-autoclient.env
 fi
 
 rm -rf ./docs
