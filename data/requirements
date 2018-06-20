@@ -1,4 +1,4 @@
-requests
-tabulate
-keyboard
-colorama
+colorama == 0.3.9
+keyboard == 0.13.2
+requests == 2.19.1
+tabulate == 0.8.2

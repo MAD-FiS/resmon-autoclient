@@ -34,7 +34,18 @@ Application will be installed in the same place where script `./install-autoclie
 You have to clone this repository. Then you can work with it and develop the application.
 If you want to run it locally for testing, it doesn't need to create installer `install-autoclient.sh`
 
-## Requirements
+## Used Python modules
+
+These modules are required by this application. If you want for example run tests,
+you need to be sure that all of them are installed on your computer by `pip3`.
+You can use for it `./data/requirements` file.
+
+| Module name                            | Version             |
+| -------------------------------------- |:-------------------:|
+| colorama                               | 0.3.9               |
+| keyboard                               | 0.13.2              |
+| requests                               | 2.19.1              |
+| tabulate                               | 0.8.2               |
 
 ## Scripts
 
