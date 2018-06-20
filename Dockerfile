@@ -5,10 +5,10 @@ FROM python:3.6
 WORKDIR /app
 
 # Copy the current directory contents into the container at /app
-ADD ./install.sh /app
+ADD ./install-autoclient.sh /app
 
 # Install any needed packages specified in requirements.txt
-RUN /app/install.sh --quiet
+RUN /app/install-autoclient.sh --quiet
 
 
 CMD ["/bin/bash"]
