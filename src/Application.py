@@ -30,7 +30,7 @@ class Application(object):
             '-c',
             '--config',
             type=str,
-            default='config.json',
+            default='./data/config.json',
             help='Location where is stored JSON configuration file'
         )
         parser.add_argument(

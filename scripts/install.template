@@ -11,7 +11,8 @@ echo "ResMon client installer"
 echo "-----------------------"
 echo ""
 
-echo "Please check if you have installed Python 3.6"
+echo "Please check if you have installed Python 3.6 and correct PIP version for it!"
+echo ""
 
 quiet=0
 ask=0
