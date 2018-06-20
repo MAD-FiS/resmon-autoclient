@@ -26,11 +26,16 @@ class Client(object):
             'username': None,
             'password': None
         }
-        self.config = Config(configFile)
-        self.request = Request()
-        self.collection = None
-        self.view = View(limit)
-        self.registerMode = register
+        try:
+            self.config = Config(configFile)
+            self.request = Request()
+            self.collection = None
+            self.view = View(limit)
+            self.registerMode = register
+        except OSError:
+            filename = configFile
+            print(f"InitError: Configuration file {filename} can\'t be found!")
+            exit(1)
 
     def loadUserData(self):
         """

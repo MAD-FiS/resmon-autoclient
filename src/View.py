@@ -1,6 +1,6 @@
 import os
 import tabulate
-
+from colorama import Fore, Back, Style
 
 class View(object):
     """
@@ -40,13 +40,21 @@ class View(object):
         :type measurements: dict
         :return: returns None
         """
-        os.system('cls' if os.name == 'nt' else 'clear')
+        self._clearScreen()
         print("Host list")
         print('---------------------------------')
         print()
-        for (metricId, measurement) in self.prepare(measurements).items():
+        sortedMeasurements = sorted(self.prepare(measurements).items())
+        for (metricId, measurement) in sortedMeasurements:
             print(tabulate.tabulate(
                 measurement,
-                headers=['Monitor', 'Host', metricId]
+                headers=['Monitor', 'Host', Style.BRIGHT+Back.RED+Fore.CYAN+metricId+Style.RESET_ALL]
             ))
             print()
+    def _clearScreen(self):
+        if os.name in ('nt', 'dos'):
+            os.system("cls")
+        elif os.name in ('linux', 'osx', 'posix'):
+            os.system("clear")
+        else:
+            print("\n") * 120
