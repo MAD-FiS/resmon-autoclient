@@ -1,6 +1,5 @@
 from src.request.Request import Request
 
-
 class MeasurementsCollection(object):
     """
     Represents single collection of data grabbed from all monitors in one time
@@ -33,6 +32,12 @@ class MeasurementsCollection(object):
         :rtype: dict
         """
         for measurement in rawMeasurements:
+            if not self._checkKeyError('metric_id', measurement) \
+            or not self._checkKeyError('hostname', measurement) \
+            or not self._checkKeyError('data', measurement):
+                continue
+            if not self._checkDataField(measurement):
+                continue
             metricId = measurement['metric_id']
             if metricId not in measurements:
                 measurements[metricId] = []
@@ -42,6 +47,22 @@ class MeasurementsCollection(object):
                  measurement['data'][-1]['value']]
             )
         return measurements
+
+    def _checkKeyError(self, keyName, measurement):
+        if 'hostname' not in measurement.keys():
+            print(f'Warning: Entry doesn\'t have key \'{keyName}\'')
+            return False
+        else:
+            return True
+
+    def _checkDataField(self, measurement):
+        if len(measurement['data']) < 1:
+            print(
+                'Warning: Data section in your entry doesn\'t have any value'
+            )
+            return False
+        else:
+            return True
 
     def get(self):
         """
